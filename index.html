@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lightbulb</title>
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "It has changed the original text";
+        }
+
+        function turnOn() {
+            document.getElementById('myImage').src='pic_bulbon.gif'
+        }
+
+        function turnOff() {
+            document.getElementById('myImage').src='pic_bulboff.gif'
+        }
+    </script>
+
+</head>
+<body>
+    <p id="demo">
+        Here is the original text
+    </p>
+    <button onclick="myFunction()">Change</button>
+    <hr>
+
+    <h2>What can JavaScript do?</h2>
+    <p>
+        JavaSrcipt can change HTML attributes
+    </p>
+    <p>
+        In this case JavaScript changes the value of the src (source) attribute of an image
+    </p>
+    <button onclick="turnOn()">Turn on the light</button>
+    <img id="myImage" src="pic_bulboff.gif" style="width:100px">
+    <button onclick="turnOff()">Turn off the light</button>
+
+</body>
+</html>
